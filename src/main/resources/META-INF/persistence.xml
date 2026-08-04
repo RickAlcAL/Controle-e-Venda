@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence ">
+    <persistence-unit name="Sistema_de_Controle_de_Estoque_e_Vendas">
+        <class>com.senaicttit.estoque.model.Produto</class>
+        <class>com.senaicttit.estoque.model.Entrada</class>
+        <class>com.senaicttit.estoque.model.Fornecedor</class>
+        <class>com.senaicttit.estoque.model.Venda</class>
+        <class>com.senaicttit.estoque.model.ItensVenda</class>
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <!-- Colocar o nome do banco de dados correto abaixo -->
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/sistema_vendas"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value=""/>
+
+            <property name="hibernate.hbm2ddl.auto" value="none"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
+
