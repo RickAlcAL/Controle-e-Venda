@@ -27,7 +27,7 @@ Foi utilizado o padrão MVC de organização de pastas de arquivos
 * http://localhost:8080/vendas/listarVendas
 
 ### Link da documentação da API
-* [documentationAPI_REST.html](src/main/resources/static/docs/documentationAPI_REST.html)
+* (https://app.swaggerhub.com/apis-docs/senai-41e/API_Estoque/V1?view=uiDocs#/)
 * >Abra no navegador ou selecione o icone do navegador desejado
 
 Adicionar produto (Qualquer produto da sua preferência)
