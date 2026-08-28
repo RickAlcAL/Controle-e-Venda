@@ -1,0 +1,93 @@
+.containerFornecedor {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+}
+
+.navegacaoFuncionario {
+
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+}
+
+.navegacaoFuncionario ul {
+
+    list-style-type: none;
+
+}
+
+.navegacaoFuncionario a {
+
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+
+}
+
+.navegacaoFuncionario a:visited {
+
+    color: black;
+
+}
+
+
+#tituloTabelaFornecedor {
+
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+
+}
+
+.tabelaFornecedor {
+    width: 1200px;
+    height: 700px;
+    border-radius: 16px;
+    background-color: white;
+
+}
+
+.gridFornecedorCabecalho {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 2fr;
+
+}
+
+#nome_fornecedor {
+
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+
+}
+
+#cpf_ou_cnpj {
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#email_fornecedor {
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#telefone_fornecedor {
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#endereco_fornecedor {
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}

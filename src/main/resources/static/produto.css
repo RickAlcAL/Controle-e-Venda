@@ -1,0 +1,97 @@
+.containerProduto {
+
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+}
+
+.menuProduto {
+
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.menuProduto ul {
+
+    list-style-type: none;
+
+}
+
+.menuProduto a {
+
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+
+}
+
+.menuProduto a:visited {
+
+    color: black;
+
+}
+
+#tituloProduto {
+
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+
+}
+
+#nomeProduto {
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 20px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#quantidadeProduto {
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#precoProduto {
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.tabelaProdutos {
+
+    width: 1200px;
+    height: 700px;
+    background-color: white;
+    border-radius: 16px;
+
+}
+
+.gridProdutoCabecalho {
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+}
+
+#botaoLinkProduto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 180px;
+    height: 75px;
+    border-radius: 16px;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    margin: 60px auto;
+}
