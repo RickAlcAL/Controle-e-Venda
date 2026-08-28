@@ -1,14 +1,22 @@
-# Sistema de Controle de Estoque e Vendas integrado com Spring Boot com JPA (REFATORADO)
+# Controle e Venda
 
-### Projeto criado de maneira gratuita e aprendizado
+### Projeto criado de maneira gratuita baseado na demanda do mercado de trabalho
 
 Foi utilizado o padrão MVC de organização de pastas de arquivos 
-`OBS: 1 vez de utilização do MVC por mim`
+
 * Métodos utilizados
 * POO (Programação Orientada a Objeto), ORM(JPA)-Object-Relational
 * Framework SpringBoot
 
->> Sistema foi refatorado sem interação com o Menu via java caso queira testar provavelmente não irá funcionar
+### Nova implementação
+
+* Está sendo adicionado o Front-End agora neste projeto
+* Está sendo 100% refeito 
+* Erros de saido e entrada e refatorando detalhes pequenos
+
+> Observação: Sistema está feito de maneira básica, futuramente sempre será modificado
+
+<br>
 
 # Comandos do Banco de Dados
 
@@ -52,7 +60,9 @@ Adicionar funcionário (Qualquer um da sua preferência)
   "enderecoFornecedor": "Rua Joinville, 1000 - Centro, Joinville - SC"
 }
 ```
-[db_vendas.sql](database/db_vendas.sql)  
+## Baixar o DB/Usar o DB
+* Clique aqui para usar o db ---> [db_vendas.sql](database/db_vendas.sql)  
+
 
 ### Observações
 
@@ -64,11 +74,9 @@ via mysql, ou java não foi testado
 
 >Serviço de Aprendizado Industrial do Centro da Tecnologia da Informação
 
-* O projeto possui DEV_LOGS documento o passo a passo do projeto
 
-> Atenção: O projeto será adicionado com os arquivos: pom.xml, persistence.xml,application.properties
+>> Atenção: O projeto será adicionado com os arquivos: pom.xml, persistence.xml,application.properties
 
-[DEV_log.md](DEV_log.md)
 
 
 

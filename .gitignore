@@ -37,3 +37,7 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+DEV_log.md
+src/main/resources/DEV_log_Front-End.md
+src/main/java/com/senaicttit/estoque/Main.java
