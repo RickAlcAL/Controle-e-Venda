@@ -1,5 +1,5 @@
 const API_Get_Fornecedores =
-    "http://localhost:8080/fornecedores";
+    "/fornecedores";
 
 
 document.addEventListener("DOMContentLoaded", () => {

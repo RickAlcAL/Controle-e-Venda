@@ -1,8 +1,8 @@
 const API_Get_Produtos =
-    "http://localhost:8080/produtos";
+    "/produtos";
 
 const API_Post_Produtos =
-    "http://localhost:8080/produtos/adicionarProduto";
+    "/adicionarProduto";
 
 
 document.addEventListener("DOMContentLoaded", () => {
