@@ -1,3 +1,4 @@
+// Chave da API sendo instanciada como CONST par que não seja alterada
 const API_Get_Produtos =
     "http://localhost:8080/produtos";
 
