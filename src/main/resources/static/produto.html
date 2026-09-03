@@ -1,50 +1,79 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/main/resources/static/styles/styles.css">
-    <link rel="stylesheet" href="/src/main/resources/static/styles/produto.css">
-    <link rel="icon" href="/src/main/resources/static/images/Produto-icon.png">
-    <script src="/src/main/resources/static/scripts/produto.js" defer></script>
-    <title> Produto </title>
+
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/produto.css">
+
+    <link rel="icon" href="/images/Produto-icon.png">
+
+    <script src="/scripts/produto.js" defer></script>
+
+    <title>Produto</title>
 </head>
-<header>
-    <div class="menuProduto">
-        <ul>
-            <li> <a href="/src/main/resources/static/index.html"> Menu </a></li>
-        </ul>
-    </div>
-</header>
 
 <body>
+
+    <header>
+
+        <div class="menuProduto">
+            <ul>
+                <li>
+                    <a href="/index.html">
+                        Menu
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+
     <main class="container">
+
         <div class="containerProduto">
+
             <div id="tituloProduto">
-                <h1> Tabela Produtos </h1>
+                <h1>Tabela Produtos</h1>
             </div>
+
             <div class="tabelaProdutos">
+
                 <div class="gridProdutoCabecalho">
+
                     <div id="nomeProduto">
-                        <h2> Nome Produto </h2>
+                        <h2>Nome Produto</h2>
                     </div>
+
                     <div id="quantidadeProduto">
-                        <h2> Quantidade </h2>
+                        <h2>Quantidade</h2>
                     </div>
+
                     <div id="precoProduto">
-                        <h2> Preço </h2>
+                        <h2>Preço</h2>
                     </div>
+
                 </div>
+
                 <div id="listaProdutos">
                     <!-- Aqui terá a lista de produtos para ser feita com JS -->
                 </div>
+
             </div>
+
             <div id="botaoComprar">
-                <a href="/src/main/resources/static/compra.html" id="botaoLinkProduto"> Comprar </a>
+                <a href="/compra.html" id="botaoLinkProduto">
+                    Comprar
+                </a>
             </div>
+
         </div>
+
     </main>
+
 </body>
 
 </html>

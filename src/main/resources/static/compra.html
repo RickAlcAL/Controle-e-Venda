@@ -1,15 +1,16 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/src/main/resources/static/styles/styles.css">
-    <link rel="stylesheet" href="/src/main/resources/static/styles/compra.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/compra.css">
 
-    <script src="/src/main/resources/static/scripts/fornecedor.js" defer></script>
-    <script src="/src/main/resources/static/scripts/compra.js" defer></script>
+    <script src="/scripts/fornecedor.js" defer></script>
+    <script src="/scripts/compra.js" defer></script>
 
     <title>Compra</title>
 </head>
@@ -25,7 +26,6 @@
             <form id="formProduto">
 
                 <div class="campo">
-
                     <label for="nomeProduto">
                         Nome do produto
                     </label>
@@ -36,12 +36,9 @@
                         placeholder="Digite o nome do produto"
                         required
                     >
-
                 </div>
 
-
                 <div class="campo">
-
                     <label for="precoProduto">
                         Preço
                     </label>
@@ -53,12 +50,9 @@
                         step="0.01"
                         required
                     >
-
                 </div>
 
-
                 <div class="campo">
-
                     <label for="quantidadeProduto">
                         Quantidade em estoque
                     </label>
@@ -70,26 +64,19 @@
                         min="0"
                         required
                     >
-
                 </div>
 
-
                 <div class="campo">
-
                     <label for="fornecedor">
                         Fornecedor
                     </label>
 
                     <select id="fornecedor" required>
-
                         <option value="">
                             Selecione um fornecedor
                         </option>
-
                     </select>
-
                 </div>
-
 
                 <button
                     type="submit"
