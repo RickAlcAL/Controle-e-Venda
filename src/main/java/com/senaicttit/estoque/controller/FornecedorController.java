@@ -10,11 +10,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/fornecedores")
+@CrossOrigin(origins = "*") /* Adicionando crossorigin para falar pro fron-end que aqui terá acesso total*/
 public class FornecedorController {
     @Autowired
     private FornecedorService fornecedorService;
 
-    @GetMapping("/listarFornecedores")
+    @GetMapping()
     public List<Fornecedor> listarFornecedores() {
         return fornecedorService.buscarTodosFornecedores();
     }

@@ -4,15 +4,23 @@
 
 Foi utilizado o padrão MVC de organização de pastas de arquivos 
 
-* Métodos utilizados
+## Métodos utilizados
 * POO (Programação Orientada a Objeto), ORM(JPA)-Object-Relational
 * Framework SpringBoot
+* Banco de dados relacional (MySQL)
+* Front-End (HTML,CSS,JavaScript)
 
 ### Nova implementação
 
-* Está sendo adicionado o Front-End agora neste projeto
-* Está sendo 100% refeito 
-* Erros de saido e entrada e refatorando detalhes pequenos
+* Front-End implementado com sucesso
+
+
+### Mudanças Futuras
+* Adicionamento de SpringSecurity
+* Tratamento de dados mais robustos
+* Implementação de I.A
+* Melhora no UI/UX
+* Novas abas/serviços
 
 > Observação: Sistema está feito de maneira básica, futuramente sempre será modificado
 
@@ -37,6 +45,9 @@ Foi utilizado o padrão MVC de organização de pastas de arquivos
 ### Link da documentação da API
 * (https://app.swaggerhub.com/apis-docs/senai-41e/API_Estoque/V1?view=uiDocs#/)
 * >Abra no navegador ou selecione o icone do navegador desejado
+  
+> Observações
+> >Não é mais necessário utilizar o POSTMAN para teste de API, com o Fron-End implementado pode ser usado naturalemnte a API já ativa
 
 Adicionar produto (Qualquer produto da sua preferência)
 ```json
@@ -60,6 +71,10 @@ Adicionar funcionário (Qualquer um da sua preferência)
   "enderecoFornecedor": "Rua Joinville, 1000 - Centro, Joinville - SC"
 }
 ```
+
+> Observações
+> >Não é mais necessário utilizar o POSTMAN para teste de API, com o Fron-End implementado pode ser usado naturalemnte a API já ativa
+> 
 ## Baixar o DB/Usar o DB
 * Clique aqui para usar o db ---> [db_vendas.sql](database/db_vendas.sql)  
 

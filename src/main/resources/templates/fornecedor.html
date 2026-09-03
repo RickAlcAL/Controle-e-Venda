@@ -4,52 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/styles.css">
-    <link rel="stylesheet" href="/static/fornecedor.css">
-    <link rel="icon" href="/static/images/Fornecedor-icon.png">
-    <title> Fornecedor </title>
-</head>
-<header>
-    <div class="navegacaoFuncionario">
-        <ul>
-            <li> <a href="/templates/index.html"> Menu </a> </li>
-        </ul>
-    </div>
 
-</header>
+    <link rel="stylesheet" href="/src/main/resources/static/styles.css">
+    <link rel="stylesheet" href="/src/main/resources/static/fornecedor.css">
+
+    <link rel="icon" href="/static/images/Fornecedor-icon.png">
+
+    <script src="/src/main/resources/static/fornecedor.js" defer></script>
+
+    <title>Fornecedor</title>
+</head>
 
 <body>
-    <main class="container">
-        <div class="containerFornecedor">
-            <div id="tituloTabelaFornecedor">
-                <h2> Tabela Fornecedores </h2>
-            </div>
-            <div class="tabelaFornecedor">
-                <div class="gridFornecedorCabecalho">
-                    <div id="nome_fornecedor">
-                        <h2> Nome Fornecedor </h2>
-                    </div>
-                    <div id="cpf_ou_cnpj">
-                        <h2> CPF/CNPJ </h2>
-                    </div>
-                    <div id="email_fornecedor">
-                        <h2> E-mail (Email) </h2>
-                    </div>
-                    <div id="telefone_fornecedor">
-                        <h2> Telefone </h2>
-                    </div>
-                    <div id="endereco_fornecedor">
-                        <h2> Endereço </h2>
-                    </div>
-                </div>
-                <div id="listaFornecedor">
-                    
-                </div>
-            </div>
-             <div id="botaoComprar">
-                <a href="/templates/compra.html" id="botaoLinkProduto"> Comprar </a>
-            </div>
+
+    <header>
+
+        <div class="navegacaoFuncionario">
+
+            <ul>
+                <li>
+                    <a href="/src/main/resources/templates/index.html">
+                        Menu
+                    </a>
+                </li>
+            </ul>
+
         </div>
+
+    </header>
+
+
+    <main class="container">
+
+        <div class="containerFornecedor">
+
+            <div id="tituloTabelaFornecedor">
+
+                <h2>
+                    Tabela Fornecedores
+                </h2>
+
+            </div>
+
+
+            <div class="tabelaFornecedor">
+
+                <div class="gridFornecedorCabecalho">
+
+                    <div>
+                        <h2>Nome Fornecedor</h2>
+                    </div>
+
+                    <div>
+                        <h2>CPF/CNPJ</h2>
+                    </div>
+
+                    <div>
+                        <h2>E-mail</h2>
+                    </div>
+
+                    <div>
+                        <h2>Telefone</h2>
+                    </div>
+
+                    <div>
+                        <h2>Endereço</h2>
+                    </div>
+
+                </div>
+
+
+                <div id="listaFornecedor"></div>
+
+            </div>
+
+
+            <div id="botaoComprar">
+
+                <a href="/src/main/resources/templates/compra.html" id="botaoLinkProduto">
+                    Comprar
+                </a>
+
+            </div>
+
+        </div>
+
     </main>
 
 </body>

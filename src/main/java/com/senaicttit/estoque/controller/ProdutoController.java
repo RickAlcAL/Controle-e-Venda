@@ -10,6 +10,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/produtos")
+@CrossOrigin(origins = "*") /* Adicionando crossorigin para falar pro fron-end que aqui terá acesso total*/
+
 public class ProdutoController {
 
 
@@ -17,10 +19,11 @@ public class ProdutoController {
     @Autowired
     private ProdutoService produtoService;
 
-    @GetMapping("/listarProdutos")
+    @GetMapping()
     public List<Produto> listarProdutos() {
 
         return produtoService.buscarNomesTodos();
+
     }
 
     @PostMapping("/adicionarProduto")
