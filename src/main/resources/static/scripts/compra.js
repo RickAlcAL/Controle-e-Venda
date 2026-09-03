@@ -1,8 +1,7 @@
 const API_Get_Produtos =
     "/produtos";
 
-const API_Post_Produtos =
-    "/adicionarProduto";
+const API_Post_Produtos = "/produtos/adicionarProduto";
 
 
 document.addEventListener("DOMContentLoaded", () => {
