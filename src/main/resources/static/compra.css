@@ -1,0 +1,83 @@
+.menuNavegacaoCompra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuNavegacaoCompra ul {
+    list-style-type: none;
+}
+
+.menuNavegacaoCompra a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.containerCompra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#block-form {
+
+    width: 380px;
+    height: 450px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+#nomeProdutoCompra {
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+#nomeProd {
+
+    width: 360px;
+
+}
+
+#nomeFornecedorCompra {
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+#nomeForn {
+
+    width: 360px;
+
+}
+
+#quantidadeProduto {
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+#quantidadeProd {
+
+    width: 100px;
+
+}
+
+#totalPreco {
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+#totalPrecoProds {
+    width: 150px;
+
+}
+
+#botaoComprarCompra {
+
+    display: block;
+
+    margin: 50px auto;
+    width: 160px;
+    height: 50px;
+    border-radius: 20px;
+}

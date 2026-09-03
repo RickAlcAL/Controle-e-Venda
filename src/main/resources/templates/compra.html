@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="/static/compra.css">
+    <link rel="icon" href="/static/images/menu-icon.png">
     <title> Compra </title>
 </head>
+<header>
+    <div class="menuNavegacaoCompra">
+        <ul>
+            <li> <a href="/templates/index.html"> Menu </a> </li>
+        </ul>
+    </div>
+</header>
+
 <body>
-    
+    <main class="container">
+        <div class="containerCompra">
+            <form action="confirmacao.html">
+                <fieldset id="block-form">
+                    <div id="nomeProdutoCompra">
+                        <label for="nomeProd"> <strong> Insira o nome do produto </strong> </label>
+                        <br>
+                        <select name="tabelaProd" id="nomeProd">
+                            <option value="opcao"> Selecione uma opção </option>
+                            <option value="Mouse"> Mouse </option>
+                            <option value="Teclado"> Teclado </option>
+                        </select>
+                    </div>
+                    <div id="nomeFornecedorCompra">
+                        <label for="nomeForn"> <strong> Insira o nome do Fornecedor </strong> </label>
+                        <br>
+                        <select name="tabelaForn" id="nomeForn">
+                            <option value="opcao"> Selecione uma opção </option>
+                            <option value="Ricardo"> Ricardo </option>
+                            <option value="Sabrina"> Sabrina </option>
+                        </select>
+                    </div>
+                    <div id="quantidadeProduto">
+                        <label for="quantidadeProd"> <strong> Insira a quantidade de produto </strong> </label>
+                        <br>
+                        <input type="number" id="quantidadeProd">
+                    </div>
+                    <div id="totalPreco">
+                        <label for="totalPrecoProds"> <strong> Total a pagar </strong> </label>
+                        <br>
+                        <input type="number" id="totalPrecoProds" readonly>
+                    </div>
+                    <button type="submit" id="botaoComprarCompra"> Comprar </button>
+                </fieldset>
+            </form>
+        </div>
+    </main>
 </body>
+
 </html>

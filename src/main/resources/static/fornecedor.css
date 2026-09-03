@@ -91,3 +91,16 @@
     border-bottom: 1px solid black;
     border-right: 1px solid black;
 }
+#botaoLinkProduto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 180px;
+    height: 75px;
+    border-radius: 16px;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    margin: 60px auto;
+}
