@@ -5,6 +5,8 @@
 ## 🌐 Deploy
 
 🔗 [Acessar aplicação online](https://controle-e-venda.onrender.com/index.html)
+> O primeiro acesso pode levar cerca de 1 minuto,
+> pois o serviço utiliza hospedagem gratuita e entra em modo de suspensão após inatividade.
 
 Foi utilizado o padrão MVC de organização de pastas de arquivos 
 
