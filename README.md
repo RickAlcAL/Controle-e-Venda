@@ -2,6 +2,10 @@
 
 ### Projeto criado de maneira gratuita baseado na demanda do mercado de trabalho
 
+## 🌐 Deploy
+
+🔗 [Acessar aplicação online](https://controle-e-venda.onrender.com/index.html)
+
 Foi utilizado o padrão MVC de organização de pastas de arquivos 
 
 ## Métodos utilizados
@@ -32,49 +36,11 @@ Foi utilizado o padrão MVC de organização de pastas de arquivos
 
 `Clique no diretorio abaixo que irá direto para o arquivo em .sql do DB`
 
-# Links de teste POSTMAN
-
-* http://localhost:8080/produtos/adicionarProduto
-* http://localhost:8080/produtos/listarProdutos
-* http://localhost:8080/fornecedores/adicionarFornecedor
-* http://localhost:8080/fornecedores/listarFornecedores
-* http://localhost:8080/entrada/listandoEntrada
-* http://localhost:8080/itensVenda/listarItensVendas
-* http://localhost:8080/vendas/listarVendas
 
 ### Link da documentação da API
 * (https://app.swaggerhub.com/apis-docs/senai-41e/API_Estoque/V1?view=uiDocs#/)
 * >Abra no navegador ou selecione o icone do navegador desejado
-  
-> Observações
-> >Não é mais necessário utilizar o POSTMAN para teste de API, com o Fron-End implementado pode ser usado naturalemnte a API já ativa
-
-Adicionar produto (Qualquer produto da sua preferência)
-```json
-
-{ 
-  "nomeProduto": "Cadeira Pichau",
-  "precoProduto": 300.00,
-  "quantidadeProduto": 30,
-  "fornecedor": {
-    "id": 4
-  }
-}
-```
-Adicionar funcionário (Qualquer um da sua preferência)
-```json
-{
-  "nomeFornecedor": "Pichau Informática",
-  "cpfOucnpjFornecedor": "12.345.678/0001-99",
-  "telefoneFornecedor": "(47) 3301-0100",
-  "emailFornecedor": "contato@pichau.com.br",
-  "enderecoFornecedor": "Rua Joinville, 1000 - Centro, Joinville - SC"
-}
-```
-
-> Observações
-> >Não é mais necessário utilizar o POSTMAN para teste de API, com o Fron-End implementado pode ser usado naturalemnte a API já ativa
-> 
+   
 ## Baixar o DB/Usar o DB
 * Clique aqui para usar o db ---> [db_vendas.sql](database/db_vendas.sql)  
 
