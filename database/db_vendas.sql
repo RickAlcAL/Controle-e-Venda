@@ -1,3 +1,5 @@
+
+
 CREATE
 DATABASE sistema_vendas;
 USE
@@ -70,6 +72,15 @@ CREATE TABLE itens_venda
     FOREIGN KEY (id_venda) REFERENCES vendas (id_venda) ON DELETE CASCADE,
     FOREIGN KEY (id_produto) REFERENCES produtos (id_produto)
 );
+-- ==========================================================
+-- TABELA: USUARIOS
+-- Recebe os dados dos usuarios
+-- ==========================================================
+CREATE TABLE usuario (
+                         id INT auto_increment PRIMARY KEY,
+                         nome_usuario VARCHAR (255) NOT NULL UNIQUE,
+                         senha_hash VARCHAR(255) NOT NULL
+);
 
 INSERT INTO fornecedores (nome_fornecedor, cpf_ou_cnpj, telefone_fornecedor, email_fornecedor, endereco_fornecedor)
 VALUES ('Distribuidora Silva LTDA', '12345678901', '(11) 98765-4321', 'contato@distribuidorasilva.com',
@@ -78,3 +89,4 @@ VALUES ('Distribuidora Silva LTDA', '12345678901', '(11) 98765-4321', 'contato@d
         'Av. Brasil, 456 - Rio de Janeiro/RJ'),
        ('Comércio de Alimentos Costa', '45678912300', '(31) 97654-3210', 'financeiro@costaalimentos.com',
         'Rua Bahia, 789 - Belo Horizonte/MG');
+

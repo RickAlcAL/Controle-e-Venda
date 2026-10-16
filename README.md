@@ -21,6 +21,7 @@ Foi utilizado o padrão MVC de organização de pastas de arquivos
 
 * Front-End implementado com sucesso
 * Sistema foi feito deploy e agora já consta na WEB
+* Pagina de login inicial básica (Colocado spring security de hash)
 
 
 ### Mudanças Futuras
