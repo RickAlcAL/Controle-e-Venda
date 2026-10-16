@@ -1,22 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Bem-Vindo(a) </title>
-    <link rel="stylesheet" href="styles/index.css">
+    <title> Cadastro </title>
+    <link rel="stylesheet" href="./styles/cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <form action="/login" method="post">
-    <label for="usuario">Insira o seu nome</label>
-    <input type="text" id="usuario" name="nomeUsuario" placeholder="Exemplo" required>
+    <form>
+        <div id="titulos-cadastro">
+            <h1> Olá ! <br> Seja Bem-Vindo(A) !!!</h1>
+        </div>
+        <div id="conteudo-cadastro">
+            <p> Deseja se cadastrar como cliente ou fornecedor ? </p>
+        </div>
+        <div id="buttom-login">
+            <button id="buttom-cadastro-login"> <a href="./cliente-cadastro.html"> Cliente</a></button>
+        </div>
 
-    <label for="senha">Insira sua senha</label>
-    <input type="password" id="senha" name="senha_hash" placeholder="******" required>
+        <div id="buttom-login">
+            <button id="buttom-cadastro-login"> <a href="./fornecedor-cadastro.html"> Fornecedor</a> </button>
+        </div>
 
-    <button type="submit">Enviar</button>
-</form>
+        <div id="conteudo-cadastro">
+            <p> Caso ja possua um login clique no botão abaixo ! </p>
+        </div>
+        <div id="buttom-login">
+            <button id="buttom-cadastro-login"> <a href="./login.html"> Login </a></button>
+        </div>
+    </form>
 </body>
+
 </html>

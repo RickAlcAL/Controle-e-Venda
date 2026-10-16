@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f3a5f;
+    /* azul marinho suave */
+    font-family: Arial, sans-serif;
+}
+
+form {
+    width: 100%;
+    max-width: 460px;
+    padding: 32px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: "Google Sans", sans-serif;
+}
+
+#titulos-cadastro {
+    text-align: center;
+    text-decoration: underline 4px;
+
+}
+
+#buttom-login {
+    display: flex;
+    width: 100%;
+    height: 45px;
+}
+
+#conteudo-cadastro {
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#buttom-cadastro-login {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#buttom-login a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#buttom-cadastro-login a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: none;
+
+}
+a {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+label {
+    font-size: 14px;
+    color: #1f3a5f;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #b8c4d6;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #000000;
+}
+
+button {
+    padding: 12px;
+    background-color: #1f3a5f;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2b4f82;
+}
+@keyframes subir {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+form {
+    animation: subir 0.8s ease-out;
+}
+
+form > * {
+    opacity: 0;
+    animation: subir 0.6s ease-out forwards;
+}
+
+form > *:nth-child(1) { animation-delay: 0.1s; }
+form > *:nth-child(2) { animation-delay: 0.2s; }
+form > *:nth-child(3) { animation-delay: 0.3s; }
+form > *:nth-child(4) { animation-delay: 0.4s; }
+form > *:nth-child(5) { animation-delay: 0.5s; }
+form > *:nth-child(6) { animation-delay: 0.6s; }
+form > *:nth-child(7) { animation-delay: 0.7s; }
+form > *:nth-child(8) { animation-delay: 0.8s; }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cadastro </title>
+    <link rel="stylesheet" href="./styles/cadastro.css">
+    <link rel="stylesheet" href="./styles/cliente-cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <form action="/login" method="post">
+        <div id="titulo-cliente">
+            <h1> Boas-Vindas !!!</h1>
+        </div>
+        <div id="descricao-titulo">
+            <h2> Insira suas credenciais para efetuar o cadastro</h2>
+        </div>
+        <div id="nome-cliente">
+            <label for="usuario">Insira o seu nome</label>
+            <input type="text" id="usuario" name="nomeUsuario" placeholder="Exemplo" required>
+        </div>
+        <div id="senha-cliente">
+            <label for="senha">Insira sua senha</label>
+            <input type="password" id="senha" name="senha_hash" placeholder="******" required>
+        </div>
+        <div id="buttom-login">
+            <button id="buttom-cadastro-login" type="submit"> <a href="./login.html"> Enviar </a></button>
+        </div>
+
+    </form>
+</body>
+
+</html>

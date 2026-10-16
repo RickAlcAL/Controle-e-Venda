@@ -17,10 +17,10 @@ public class UsuarioController {
     @Autowired
     private PasswordEncoder encoder;
 
-    // Garante expressamente que quem acede a raiz "/" vai para a tela de login (index.html)
+    // Garante expressamente que quem acede a raiz "/" vai para a tela de login (login.html)
     @GetMapping("/")
     public String paginaInicial() {
-        return "redirect:/index.html";
+        return "redirect:/login.html";
     }
 
     @PostMapping("/cadastro")
@@ -30,7 +30,7 @@ public class UsuarioController {
         u.setNome_usuario(nomeUsuario);
         u.setSenhaHash(encoder.encode(senha_hash));
         repository.save(u);
-        return "redirect:/index.html"; // Após cadastrar, volta para o login
+        return "redirect:/login.html"; // Após cadastrar, volta para o login
     }
 
     @PostMapping("/login")
@@ -43,6 +43,6 @@ public class UsuarioController {
         }
 
         // Se errar, volta para a tela de login
-        return "redirect:/index.html?error=true";
+        return "redirect:/login.html?error=true";
     }
 }

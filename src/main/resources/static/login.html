@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bem-Vindo(a) </title>
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+
+<body>
+    <form action="/login" method="post">
+        <label for="usuario">Insira o seu nome</label>
+        <input type="text" id="usuario" name="nomeUsuario" placeholder="Exemplo" required>
+
+        <label for="senha">Insira sua senha</label>
+        <input type="password" id="senha" name="senha_hash" placeholder="******" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
