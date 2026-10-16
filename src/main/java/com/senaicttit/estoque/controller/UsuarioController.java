@@ -5,6 +5,7 @@ import com.senaicttit.estoque.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -15,28 +16,33 @@ public class UsuarioController {
     private UsuarioRepository repository;
     @Autowired
     private PasswordEncoder encoder;
-    /* Método que recebe a senha e o nome do usuario para login.
-    *     Com isto passa por um processo de INSERT onde set o nome do usuario e a senha
-    * passando por um encoder que criptografa a senha do usuario*/
+
+    // Garante expressamente que quem acede a raiz "/" vai para a tela de login (index.html)
+    @GetMapping("/")
+    public String paginaInicial() {
+        return "redirect:/index.html";
+    }
+
     @PostMapping("/cadastro")
     public String cadastrar(@RequestParam String nomeUsuario,
                             @RequestParam String senha_hash) {
         Usuario u = new Usuario();
         u.setNome_usuario(nomeUsuario);
-        u.setSenhaHash(encoder.encode(senha_hash)); // aqui acontece a criptografia
+        u.setSenhaHash(encoder.encode(senha_hash));
         repository.save(u);
-        return "redirect:/select.html";
+        return "redirect:/index.html"; // Após cadastrar, volta para o login
     }
-    // Método de login
+
     @PostMapping("/login")
     public String login(@RequestParam String nomeUsuario, @RequestParam String senha_hash) {
         Usuario u = repository.findByNomeUsuario(nomeUsuario).orElse(null);
 
         if (u != null && encoder.matches(senha_hash, u.getSenhaHash())) {
+            // Se acertar o login, vai para a tela de seleção/abas
             return "redirect:/select.html";
-            //Caso seja encontrado o usuário ele entra normalmente
         }
-        //Caso contraio ele retorna a tela inicial
-        return "redirect:/index.html";
+
+        // Se errar, volta para a tela de login
+        return "redirect:/index.html?error=true";
     }
 }
