@@ -37,6 +37,6 @@ public class UsuarioController {
             //Caso seja encontrado o usuário ele entra normalmente
         }
         //Caso contraio ele retorna a tela inicial
-        return "redirect:/login.html";
+        return "redirect:/index.html";
     }
 }
