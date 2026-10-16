@@ -25,7 +25,7 @@ public class UsuarioController {
         u.setNome_usuario(nomeUsuario);
         u.setSenhaHash(encoder.encode(senha_hash)); // aqui acontece a criptografia
         repository.save(u);
-        return "redirect:/index.html";
+        return "redirect:/select.html";
     }
     // Método de login
     @PostMapping("/login")
@@ -33,10 +33,10 @@ public class UsuarioController {
         Usuario u = repository.findByNomeUsuario(nomeUsuario).orElse(null);
 
         if (u != null && encoder.matches(senha_hash, u.getSenhaHash())) {
-            return "redirect:/index.html";
+            return "redirect:/select.html";
             //Caso seja encontrado o usuário ele entra normalmente
         }
         //Caso contraio ele retorna a tela inicial
-        return "redirect:/tela_login.html";
+        return "redirect:/login.html";
     }
 }

@@ -145,7 +145,7 @@ async function cadastrarProduto(evento) {
 
 
         window.location.href =
-            "index.html";
+            "select.html";
 
 
     } catch (erro) {
