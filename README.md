@@ -11,17 +11,18 @@
 Foi utilizado o padrão MVC de organização de pastas de arquivos 
 
 ## Métodos utilizados
-* POO (Programação Orientada a Objeto), ORM(JPA)-Object-Relational
-* Framework SpringBoot
-* Banco de dados relacional (MySQL)
-* Front-End (HTML,CSS,JavaScript)
-* API Rest
+* POO (Programação Orientada a Objeto), ORM(JPA)-Object-Relational.
+* Framework SpringBoot.
+* Banco de dados relacional (MySQL).
+* Front-End (HTML,CSS,JavaScript).
+* API Rest.
 
 ### Nova implementação
 
-* Front-End implementado com sucesso
-* Sistema foi feito deploy e agora já consta na WEB
-* Pagina de login inicial básica (Colocado spring security de hash)
+* Front-End implementado com sucesso.
+* Sistema foi feito deploy e agora já consta na WEB.
+* Pagina de login inicial básica (Colocado spring security de hash).
+* Colocado tela de cadastro de cliente e funcionario (Não está concluido ainda).
 
 
 ### Mudanças Futuras
@@ -36,12 +37,29 @@ Foi utilizado o padrão MVC de organização de pastas de arquivos
 
 ### Link da documentação da API
 * (https://app.swaggerhub.com/apis-docs/senai-41e/API_Estoque/V1?view=uiDocs#/)
-* >Abra no navegador ou selecione o icone do navegador desejado
+* Abra no navegador ou selecione o icone do navegador desejado
    
 
 
->> Atenção: O projeto será adicionado com os arquivos: pom.xml, persistence.xml,application.properties
+> Atenção: O projeto será adicionado com os arquivos: pom.xml, persistence.xml,application.properties
 
 
 
+## Como utilizar o projeto local
 
+### Passo 1
+
+ * Clique no botão ->
+ ![botão github](src/main/resources/static/images/image.png)
+ ### Passo 2
+ * Após ter clicado no botão copie este link
+ ### Passo 3
+ ![alt text](src/main/resources/static/images/image-1.png)
+ ### Passo 4
+ 
+ * Após isto cole no terminal de seu editor de texto de sua preferência
+ > Obsevação, para abranger todo o projeto coloque no IntellJ IDEA e no Visual Studio Code
+ <img src="./src/main/resources/static/images/vscode.png" width="32" height="32" alt="VS Code">
+ <br>
+ <img src="./src/main/resources/static/images/jetbrains.png"  height="32" alt="IntelliJ IDEA">
+ 
