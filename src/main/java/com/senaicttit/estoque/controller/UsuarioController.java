@@ -25,7 +25,7 @@ public class UsuarioController {
     // Garante expressamente que quem acede a raiz "/" vai para a tela de login (login.html)
     @GetMapping("/")
     public String paginaInicial() {
-        return "redirect:/login.html";
+        return "redirect:/index.html";
     }
 
     @PostMapping("/cadastro")
