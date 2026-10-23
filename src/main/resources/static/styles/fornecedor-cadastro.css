@@ -9,7 +9,32 @@
     }
 }
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Google Sans", Arial, Helvetica, sans-serif;
+    background-image: url("../images/Background-venda-1920x1080.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 form {
+    width: 100%;
+    max-width: 460px;
+    margin: 24px;
+    padding: 32px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
     animation: subir 0.8s ease-out;
 }
 
@@ -26,3 +51,63 @@ form > *:nth-child(5) { animation-delay: 0.5s; }
 form > *:nth-child(6) { animation-delay: 0.6s; }
 form > *:nth-child(7) { animation-delay: 0.7s; }
 form > *:nth-child(8) { animation-delay: 0.8s; }
+
+#titulo-fornecedor h1 {
+    margin: 0;
+    font-size: 26px;
+    color: #1f3a5f;
+    text-align: center;
+}
+
+#descricao-titulo h2 {
+    margin: 8px 0 24px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    text-align: center;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.campo label {
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.campo input {
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: inherit;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.campo input:focus {
+    border-color: #1f3a5f;
+    box-shadow: 0 0 0 3px rgba(31, 58, 95, 0.15);
+}
+
+#botao-cadastro button {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    font-family: inherit;
+    color: #fff;
+    background-color: #1f3a5f;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#botao-cadastro button:hover {
+    background-color: #2b4f82;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Fornecedor</title>
+    <link rel="stylesheet" href="./styles/perfil-fornecedor.css">
+    <script src="./scripts/carregarPerfilFornecedor.js"></script>
+    <link rel="icon" href="./images/menu-icon.png">
+</head>
+
+<body>
+    <main class="perfil-container">
+        <section class="perfil-card">
+
+            <div class="perfil-topo">
+                <div id="avatar" class="avatar">?</div>
+                <h1 id="perfil-nome-completo">Carregando...</h1>
+                <p class="perfil-subtitulo">Fornecedor</p>
+            </div>
+
+            <div class="perfil-dados">
+                <div class="dado">
+                    <span class="dado-label">Nome</span>
+                    <span id="perfil-nome" class="dado-valor">-</span>
+                </div>
+                <div class="dado">
+                    <span class="dado-label">CPF / CNPJ</span>
+                    <span id="perfil-cpf-cnpj" class="dado-valor">-</span>
+                </div>
+                <div class="dado">
+                    <span class="dado-label">Telefone</span>
+                    <span id="perfil-telefone" class="dado-valor">-</span>
+                </div>
+                <div class="dado">
+                    <span class="dado-label">E-mail</span>
+                    <span id="perfil-email" class="dado-valor">-</span>
+                </div>
+                <div class="dado">
+                    <span class="dado-label">Endereço</span>
+                    <span id="perfil-endereco" class="dado-valor">-</span>
+                </div>
+            </div>
+
+            <a href="./select.html" class="botao-voltar">Voltar ao menu</a>
+        </section>
+    </main>
+
+    <script src="./js/perfil-fornecedor.js"></script>
+</body>
+
+</html>

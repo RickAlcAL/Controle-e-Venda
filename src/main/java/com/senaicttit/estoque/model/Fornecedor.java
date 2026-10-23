@@ -28,6 +28,8 @@ public class Fornecedor  {
     @Column(name = "endereco_fornecedor")
     private String enderecoFornecedor;
 
+    @Column(name = "senha_hash_fornecedor")
+    private String senhaHashFornecedor;
 
     public Fornecedor(Integer id, String nomeFornecedor, String cpfOucnpjFornecedor, String telefoneFornecedor, String emailFornecedor, String enderecoFornecedor) {
         this.id = id;
@@ -74,6 +76,14 @@ public class Fornecedor  {
             throw new RuntimeException("CPF/CNPJ inválido! Deve conter 11 dígitos (CPF) ou 14 dígitos (CNPJ).");
 
         }
+    }
+
+    public void setSenhaHashFornecedor(String senhaHashFornecedor) {
+        this.senhaHashFornecedor = senhaHashFornecedor;
+    }
+
+    public String getSenhaHashFornecedor() {
+        return senhaHashFornecedor;
     }
 
     public String getEmailFornecedor() {
@@ -156,14 +166,5 @@ public class Fornecedor  {
 
         }
 
-    }
-
-    @Override
-    public String toString() {
-        return "Nome fornecedor: " + getNomeFornecedor() +
-                "CPF/CNPJ fornecedor: " + getCpfOucnpjFornecedor() +
-                "Endereço do fornecedor: " + getEnderecoFornecedor() +
-                "Email do fornecedor: " + getEmailFornecedor() +
-                "Telefone do fornecedor: " + getTelefoneFornecedor();
     }
 }

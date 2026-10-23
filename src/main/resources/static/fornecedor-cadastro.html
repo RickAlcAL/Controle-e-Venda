@@ -4,18 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Cadastro </title>
-    <link rel="stylesheet" href="./styles/cadastro.css">
+    <title>Cadastro de Fornecedor</title>
+    <link rel="stylesheet" href="./styles/fornecedor-cadastro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <form>
-        
+    <form action="/fornecedores/cadastrar-fornecedor" method="post">
+        <div id="titulo-fornecedor">
+            <h1>Cadastro de Fornecedor</h1>
+        </div>
+        <div id="descricao-titulo">
+            <h2>Preencha os dados para cadastrar um novo fornecedor</h2>
+        </div>
+
+        <div class="campo">
+            <label for="nome-fornecedor">Nome do fornecedor</label>
+            <input type="text" id="nome-fornecedor" name="nomeFornecedor" placeholder="Empresa Exemplo LTDA"
+                maxlength="150" required>
+        </div>
+        <div class="campo">
+            <label for="senha-fornecedor">Senha</label>
+            <input type="password" id="senha-fornecedor" name="senha_fornecedor" placeholder="******" required>
+        </div>
+        <div class="campo">
+            <label for="cpf-cnpj">CPF ou CNPJ (somente números)</label>
+            <input type="text" id="cpf-cnpj" name="cpf_ou_cnpj" oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                placeholder="12345678901" inputmode="numeric" maxlength="14" required>
+        </div>
+
+        <div class="campo">
+            <label for="telefone-fornecedor">Telefone</label>
+            <input type="tel" id="telefone-fornecedor" name="telefone_fornecedor"
+                oninput="this.value = this.value.replace(/[^0-9]/g, '')" placeholder="31999999999" maxlength="20">
+        </div>
+
+        <div class="campo">
+            <label for="email-fornecedor">E-mail</label>
+            <input type="email" id="email-fornecedor" name="email_fornecedor" placeholder="contato@empresa.com"
+                maxlength="100">
+        </div>
+
+        <div class="campo">
+            <label for="endereco-fornecedor">Endereço</label>
+            <input type="text" id="endereco-fornecedor" name="endereco_fornecedor"
+                placeholder="Rua Exemplo, 123 - Betim/MG" maxlength="255">
+        </div>
+
+        <div id="botao-cadastro">
+            <button type="submit">Cadastrar</button>
+        </div>
     </form>
 </body>
 

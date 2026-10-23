@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f3a5f;
+    font-family: "Google Sans", Arial, sans-serif;
+}
+
+.perfil {
+    width: 100%;
+    max-width: 460px;
+    padding: 32px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.perfil-topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.avatar {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    background-color: #1f3a5f;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.perfil-topo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #1f3a5f;
+    text-align: center;
+    word-break: break-word;
+}
+
+.perfil-subtitulo {
+    font-size: 13px;
+    color: #7a8aa3;
+}
+
+.perfil-secao {
+    margin-bottom: 20px;
+}
+
+.perfil-secao h2 {
+    margin: 0 0 8px;
+    padding-bottom: 6px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #1f3a5f;
+    border-bottom: 2px solid #b8c4d6;
+}
+
+.perfil-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 6px 0;
+}
+
+.rotulo {
+    font-size: 14px;
+    color: #7a8aa3;
+}
+
+.valor {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1f3a5f;
+    text-align: right;
+    word-break: break-word;
+}
+
+.perfil-observacao {
+    margin: 0;
+    font-size: 14px;
+    color: #1f3a5f;
+    word-break: break-word;
+}
+
+.perfil-botoes {
+    margin-top: 24px;
+}
+
+.botao {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #1f3a5f;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: background-color 0.2s ease;
+}
+
+.botao:hover {
+    background-color: #2b4f82;
+}

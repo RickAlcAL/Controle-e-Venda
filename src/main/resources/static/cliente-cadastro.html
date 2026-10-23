@@ -15,25 +15,68 @@
 </head>
 
 <body>
-    <form action="/login" method="post">
+    <form action="/cadastro" method="post">
         <div id="titulo-cliente">
             <h1> Boas-Vindas !!!</h1>
         </div>
         <div id="descricao-titulo">
             <h2> Insira suas credenciais para efetuar o cadastro</h2>
         </div>
-        <div id="nome-cliente">
-            <label for="usuario">Insira o seu nome</label>
-            <input type="text" id="usuario" name="nomeUsuario" placeholder="Exemplo" required>
+        <div class="campo">
+            <label for="username">Insira seu username</label>
+            <input type="text" id="username" name="username" placeholder="usuario123" required>
         </div>
-        <div id="senha-cliente">
+        <div class="campo">
             <label for="senha">Insira sua senha</label>
             <input type="password" id="senha" name="senha_hash" placeholder="******" required>
         </div>
-        <div id="buttom-login">
-            <button id="buttom-cadastro-login" type="submit"> <a href="./login.html"> Enviar </a></button>
+        <div class="campo">
+            <label for="usuario">Insira o seu nome</label>
+            <input type="text" oninput="this.value = this.value.replace(/[^A-Za-zÀ-ÿ\s]/g, '')" id="usuario"
+                name="nomeUsuario" placeholder="Exemplo" required>
         </div>
-
+        <div class="campo">
+            <label for="sobrenome">Insira o seu sobrenome</label>
+            <input type="text" oninput="this.value = this.value.replace(/[^A-Za-zÀ-ÿ\s]/g, '')" id="sobrenome"
+                name="sobrenomeUsuario" placeholder="Silva" required>
+        </div>
+        <div class="campo">
+            <label for="endereco"> Insira seu endereço </label>
+            <input type="text" id="endereco" name="enderecoUsuario" placeholder="Rua de teste" required>
+        </div>
+        <div class="campo">
+            <label for="estado"> Insira seu estado </label>
+            <input type="text" oninput="this.value = this.value.replace(/[^A-Za-zÀ-ÿ\s]/g, '')" id="estado"
+                name="estadoUsuario" placeholder="Minas Gerais" required>
+        </div>
+        <div class="campo">
+            <label for="cidade"> Insira sua cidade </label>
+            <input type="text" oninput="this.value = this.value.replace(/[^A-Za-zÀ-ÿ\s]/g, '')" id="cidade"
+                name="cidadeUsuario" placeholder="Betim" required>
+        </div>
+        <div class="campo">
+            <label for="cep-endereco-usuario"> Insira o CEP </label>
+            <input type="number" oninput="this.value = this.value.replace(/[^0-9]/g, '')" id="cep-endereco-usuario"
+                name="numeroCepUsuario" placeholder="000" required>
+        </div>
+        <div class="campo">
+            <label for="numero-usuario"> Insira o número da residencia </label>
+            <input type="number" oninput="this.value = this.value.replace(/[^0-9]/g, '')" id="numero-usuario"
+                name="numeroEnderecoUsuario" placeholder="000" required>
+        </div>
+        <div class="campo">
+            <label for="telefone-usuario"> Insira seu telefone </label>
+            <input type="number" oninput="this.value = this.value.replace(/[^0-9]/g, '')" id="telefone-usuario"
+                name="numeroTelefoneUsuario" placeholder="31341834998" required>
+        </div>
+        <div class="campo">
+            <label for="observacao-usuario"> Insira uma observação caso tenha sobre sua localidade </label>
+            <textarea name="observacaoUsuario" id="observacao-usuario"
+                placeholder="Insira a observação. Máximo 1000 caracteres" maxlength="1000" rows="4"></textarea>
+        </div>
+        <div id="buttom-login">
+            <button id="buttom-cadastro-login" type="submit"> Enviar </button>
+        </div>
     </form>
 </body>
 

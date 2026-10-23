@@ -5,8 +5,9 @@
 ## 🌐 Deploy
 
 🔗 [Acessar aplicação online](https://controle-e-venda.onrender.com/index.html)
-> O primeiro acesso pode levar cerca de 1 minuto,
-> pois o serviço utiliza hospedagem gratuita e entra em modo de suspensão após inatividade.
+> O primeiro acesso pode levar cerca de 1 minuto
+>,pois o serviço utiliza hospedagem gratuita e entra em modo de suspensão após inatividade.
+> Colocando data apartir de agora com base no que foi implementado e no dia que foi também
 
 Foi utilizado o padrão MVC de organização de pastas de arquivos 
 
@@ -19,10 +20,11 @@ Foi utilizado o padrão MVC de organização de pastas de arquivos
 
 ### Nova implementação
 
-* Front-End implementado com sucesso.
+* Front-End implementado com sucesso .
 * Sistema foi feito deploy e agora já consta na WEB.
 * Pagina de login inicial básica (Colocado spring security de hash).
 * Colocado tela de cadastro de cliente e funcionario (Não está concluido ainda).
+* Implementado tela de login e cadastro de fornecedor e cliente | Data: 22/10/2026
 
 
 ### Mudanças Futuras
@@ -36,7 +38,9 @@ Foi utilizado o padrão MVC de organização de pastas de arquivos
 <br>
 
 ### Link da documentação da API
-* (https://app.swaggerhub.com/apis-docs/senai-41e/API_Estoque/V1?view=uiDocs#/)
+
+### API documentation está desatualizada
+* (~~https://app.swaggerhub.com/apis-docs/senai-41e/API_Estoque/V1?view=uiDocs#/~~)
 * Abra no navegador ou selecione o icone do navegador desejado
    
 

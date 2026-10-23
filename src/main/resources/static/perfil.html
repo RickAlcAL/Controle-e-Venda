@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Perfil </title>
+    <link rel="stylesheet" href="./styles/perfil.css">
+    <script src="./scripts/carregarPerfil.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main class="perfil">
+        <div class="perfil-topo">
+            <div class="avatar" id="avatar">?</div>
+            <h1 id="perfil-nome-completo">Carregando...</h1>
+            <span class="perfil-subtitulo">Meu perfil</span>
+        </div>
+
+        <section class="perfil-secao">
+            <h2>Dados pessoais</h2>
+            <div class="perfil-item">
+                <span class="rotulo">Nome</span>
+                <span class="valor" id="perfil-nome">-</span>
+            </div>
+            <div class="perfil-item">
+                <span class="rotulo">Sobrenome</span>
+                <span class="valor" id="perfil-sobrenome">-</span>
+            </div>
+        </section>
+
+        <section class="perfil-secao">
+            <h2>Contato</h2>
+            <div class="perfil-item">
+                <span class="rotulo">Telefone</span>
+                <span class="valor" id="perfil-telefone">-</span>
+            </div>
+        </section>
+
+        <section class="perfil-secao">
+            <h2>Endereço</h2>
+            <div class="perfil-item">
+                <span class="rotulo">Rua</span>
+                <span class="valor" id="perfil-endereco">-</span>
+            </div>
+            <div class="perfil-item">
+                <span class="rotulo">Número</span>
+                <span class="valor" id="perfil-numero">-</span>
+            </div>
+            <div class="perfil-item">
+                <span class="rotulo">CEP</span>
+                <span class="valor" id="perfil-cep">-</span>
+            </div>
+            <div class="perfil-item">
+                <span class="rotulo">Cidade / Estado</span>
+                <span class="valor" id="perfil-cidade-estado">-</span>
+            </div>
+        </section>
+
+        <section class="perfil-secao">
+            <h2>Observação</h2>
+            <p class="perfil-observacao" id="perfil-observacao">-</p>
+        </section>
+
+        <div class="perfil-botoes">
+            <a href="./select.html" class="botao">Voltar</a>
+        </div>
+    </main>
+
+
+</body>
+
+</html>

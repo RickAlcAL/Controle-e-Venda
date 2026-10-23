@@ -3,8 +3,7 @@ body {
     margin: 0;
     min-height: 100vh;
 
-    background-image: url("/images/Background-venda-1920x1080.png");
-
+    background-image: url("../images/Background-venda-1920x1080.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -55,4 +54,31 @@ body {
     height: 100%;
     border-radius: 8px;
     object-fit: cover;
+}
+
+.popup-caixa h3 {
+    margin: 0 0 8px;
+    color: #27ae60;
+}
+
+.botao-perfil {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #1f3a5f;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    z-index: 100;
+    transition: background-color 0.2s ease;
+}
+
+.botao-perfil:hover {
+    background-color: #2b4f82;
 }
